@@ -6,7 +6,7 @@
 //                 mmaitre314 <https://github.com/mmaitre314>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-declare namespace __vis {
+declare namespace vis {
   type IdType = string | number;
   type SubgroupType = IdType;
   type DateType = Date | number | string | moment.Moment;
@@ -224,6 +224,15 @@ declare namespace __vis {
   }
 
   export class DataSet<T extends DataItem | DataGroup | INode | IEdge> {
+
+    /**
+     * Creates an instance of DataSet.
+     * 
+     * @param {DataSetOptions} [options] DataSet options.
+     * 
+     * @memberOf DataSet
+     */
+    constructor(options: DataSetOptions);
 
     /**
      * Creates an instance of DataSet.
@@ -563,7 +572,7 @@ declare namespace __vis {
   }
 
   export interface ITimelineStatic {
-      new(id: HTMLElement, data: any, options?: any): __vis.ITimeline;
+      new(id: HTMLElement, data: any, options?: any): vis.ITimeline;
   }
 
   export interface ITimeline {
@@ -1743,7 +1752,7 @@ declare namespace __vis {
 }
 
 declare module "vis" {
-  export = __vis;
+  export = vis;
 }
 
 declare namespace moment {
