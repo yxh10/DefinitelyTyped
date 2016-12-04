@@ -186,7 +186,7 @@ var options2 = {
     configure: {
         enabled: true,
         filter: 'nodes,edges',
-        container: undefined,
+        container: <HTMLElement>undefined,
         showButton: true
     }
 }
