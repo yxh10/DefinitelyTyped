@@ -561,6 +561,8 @@ declare namespace vis {
     setOptions(options: TimelineOptions): void;
     setSelection(ids: IdType | IdType[]): void;
     setWindow(start: DateType, end: DateType, options?: TimelineFitOptions): void;
+    zoomIn(percentage: Number): void;
+    zoomOut(percentage: Number): void;
   }
 
   export interface ITimelineStatic {
